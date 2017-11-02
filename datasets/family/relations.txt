@@ -1,0 +1,12 @@
+aunt
+brother
+daughter
+father
+husband
+mother
+nephew
+niece
+sister
+son
+uncle
+wife
