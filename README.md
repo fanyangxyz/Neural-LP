@@ -19,3 +19,10 @@ python src/main.py --datadir=datasets/family --exps_dir=exps/ --exp_name=demo
 ```
 
 Wait for around 8 minutes, navigate to `exps/demo/`, there is `rules.txt` that contains learned logical rules. 
+
+## Evaluation
+```
+. eval/collect_all_facts.py datasets/family
+python eval/get_truths.py datasets/family
+python eval/evaluate.py --preds=exps/dev/test_predictions.py --truths=datasets/family/truths.pckl
+```
