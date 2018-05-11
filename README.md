@@ -21,6 +21,8 @@ python src/main.py --datadir=datasets/family --exps_dir=exps/ --exp_name=demo
 Wait for around 8 minutes, navigate to `exps/demo/`, there is `rules.txt` that contains learned logical rules. 
 
 ## Evaluation
+To evaluate the prediction results, following the steps below. The first two steps are preparation steps so that we can compute filtered ranks. See [TransE] (https://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data.pdf) for details.
+We use the experiment from Quick Start as an example. Change the folder names (datasets/family, exps/dev) for 
 ```
 . eval/collect_all_facts.py datasets/family
 python eval/get_truths.py datasets/family
