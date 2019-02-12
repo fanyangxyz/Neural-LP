@@ -25,7 +25,7 @@ To evaluate the prediction results, follow the steps below. The first two steps 
 
 We use the experiment from Quick Start as an example. Change the folder names (datasets/family, exps/dev) for other experiments.
 ```
-. eval/collect_all_facts.py datasets/family
+. eval/collect_all_facts.sh datasets/family
 python eval/get_truths.py datasets/family
-python eval/evaluate.py --preds=exps/dev/test_predictions.py --truths=datasets/family/truths.pckl
+python eval/evaluate.py --preds=exps/demo/test_predictions.txt --truths=datasets/family/truths.pckl
 ```
